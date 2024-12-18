@@ -1,5 +1,13 @@
+/* Define Roboto Regular */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('./Assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Variable font weight range */
+  font-style: normal; /* Specify available styles */
+}
 :root {
   --primary-color: #FF8527; 
   --secondary-color: #fff;
   --warning-color: #000;
+  --font:"Roboto Slab", serif;
 }
