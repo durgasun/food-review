@@ -1,0 +1,40 @@
+.signin-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.signin-top-container{
+    height: 54vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img.signin-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.signin-bottom-container {
+    margin-top: -15%;
+    z-index: 9999;
+    background: #fbfbfb;
+    height: 45vh;
+    border-radius: 25px;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+span.sign-ic {
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: var(--font);
+}
+
+span.sign-sub-ic {
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 15px;
+}
