@@ -8,6 +8,7 @@
 :root {
   --primary-color: #FF8527; 
   --secondary-color: #fff;
+  --light-color:#948f8f;
   --warning-color: #000;
   --font:"Roboto Slab", serif;
 }
