@@ -1,0 +1,36 @@
+.or-text {
+    margin-top: -17px;
+    position: absolute;
+    border: none;
+    padding: 6px;
+    background: white;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+    width: 50px;
+    text-align: center;
+}
+.or-hr-line {
+    border: 0.2px solid #ceced2;
+    width: 69%;
+    position: absolute;
+    z-index: 2;
+}
+.or-text {
+    margin-top: -20px;
+    position: absolute;
+    border: none;
+    padding: 6px;
+    background: white;
+    font-family: var(--font);
+    color: #ceced2;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    z-index: 5;
+}
+.or-hr-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}

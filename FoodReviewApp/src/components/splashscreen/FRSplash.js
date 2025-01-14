@@ -1,11 +1,15 @@
 import React from "react";
 import '../../Assets/css/splash.css';
-export default function FRSplash({skip,image,icon,heading,content}){
+import FunctionButton from "../common/button/FunctionButton";
+import { useNavigate } from "react-router-dom";
+
+export default function FRSplash({skip,image,icon,heading,content,signinbutton,skipfun}){
+  const navigation=useNavigate();
     return(
         <div className='splash-container'>
         {
             skip && (
-                <div className='splash-skip-btn'>
+                <div className='splash-skip-btn' onClick={()=>{skipfun()}}>
                   <span className='splash-skip-btn-txt'>Skip</span>
                 </div>
             )
@@ -26,6 +30,13 @@ export default function FRSplash({skip,image,icon,heading,content}){
              <span className='splash-content-txt'>{content}</span>
            </div>
          </div>
+         {
+          signinbutton && 
+           <FunctionButton
+             btntext={'Get Started'}
+             clickfun={()=>{navigation('/login')}}
+          />
+         }
         </div>
        </div>
     )

@@ -1,0 +1,110 @@
+.dashboard-con{
+    padding: 10px;
+    background: var(--page-bg);
+    padding-bottom: 45%;
+}
+img.dash-profile {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    background: white;
+    padding: 5px;
+}
+.dash-header-con {
+    padding: 6px;
+    margin-bottom: 24px;
+}
+.FR-heading-con {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    margin-bottom: 14px;
+    margin-top: 18px;
+}
+
+.profile-con {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-name-con {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.profile-nac-1 {
+    font-family: var(--font);
+    font-size: 22px;
+    font-weight: bold;
+}
+.profile-nac-2 {
+    font-size: 15px;
+    font-family: var(--font);
+    color: var(--light-color);
+}
+.Fr-Des {
+    font-size: 19px;
+    font-family: var(--font);
+    color: var(--light-color);
+    padding: 10px;
+}
+
+.notification-con {
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
+}
+svg.notification-nav {
+    font-size: 42px;
+    color: #252525;
+}
+.noti-count-con {
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 5px;
+    top: -9px;
+    margin-left: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #f3dfd0;
+    color: var(--primary-color);
+    height: 16px;
+    width: 16px;
+    justify-content: center;
+    display: flex;
+}
+.FD-topic-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.FD-Tp-title {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--font);
+    font-style: italic;
+    width: 80%;
+}
+.FD-Tp-count {
+    font-size: 19px;
+    font-family: var(--font);
+    color: var(--light-color);
+}
+.swiper.swiper-initialized.swiper-horizontal.CookieBookSwiper.swiper-backface-hidden {
+    padding-bottom: 46px;
+    padding-top:10px;
+}
+.FCat-content-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

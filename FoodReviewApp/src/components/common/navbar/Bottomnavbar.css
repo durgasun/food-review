@@ -1,0 +1,53 @@
+.FD-bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1000;
+    height: 43px;
+    align-items: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 4px rgb(103 101 101 / 10%);
+}
+
+.FD-BN-icon-con {
+    padding: 10px;
+}
+
+svg.FD-BN-ic {
+    font-size: 28px;
+    color: #cac2be;
+}
+
+.FD-plus-con {
+    height: 70px;
+    width: 70px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin-top: -24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg.FD-plus-ic {
+    font-size: 35px;
+    color: #fff;
+}
+
+svg.FD-BN-ic.Active {
+    color: var(--primary-color);
+    z-index: 9999;
+    box-shadow: 1px 1px 4px var(--primary-glace);
+    padding: 11px;
+    border-radius: 50%;
+    background: var(--page-bg);
+}
