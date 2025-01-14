@@ -1,0 +1,45 @@
+.mobile-no-container {
+    width: 96%;
+    border: 1px solid #B3B4BA;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 4px;
+    background: white;
+}
+.err-border{
+    border: 1px solid #ff7889 !important;
+}
+.SMNC-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #B3B4BA;
+    padding: 8px;
+    gap: 10px;
+    width: 23%;
+}
+img.flagimg {
+    height: 31px;
+    border-radius: 6px;
+}
+.mobile-txt {
+    padding-right: 4px;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+}
+.SMNC-Right {
+    width: 80%;
+}
+.mob-inp {
+    height: 20px;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    width: 90%;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+    outline: none;
+}

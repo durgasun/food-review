@@ -1,0 +1,26 @@
+.Fcat-con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100px;
+    align-items: center;
+}
+.Fcat-top-con {
+    height: 100px;
+    width: 100px;
+    border-radius: 14px;
+}
+img.Fact-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.Fcat-bottom-con {
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: var(--font);
+}
+

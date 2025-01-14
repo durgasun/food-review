@@ -1,0 +1,39 @@
+.single-profile-con {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    /* padding-bottom: 20px !important; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.SPC-lable {
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 16px;
+}
+.basic-inp {
+    height: 28px;
+    padding: 10px;
+    width: 95%;
+    border-radius: 9px;
+    border: 1px solid #B3B4BA;
+    font-family: var(--font);
+    font-size: 17px;
+    color: #323131;
+    outline: none;
+}
+.basic-inp-area{
+    height: 98px;
+    padding: 10px;
+    width: 95%;
+    border-radius: 9px;
+    border: 1px solid #B3B4BA;
+    font-family: var(--font);
+    font-size: 17px;
+    color: #323131;
+    outline: none;  
+}
+.err-border{
+    border: 1px solid #ff7889 !important;
+}
+

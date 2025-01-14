@@ -6,25 +6,32 @@
     flex-direction: column;
 }
 .signin-top-container{
-    height: 54vh;
+    height: 42vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 img.signin-cover-img {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
 }
 .signin-bottom-container {
     margin-top: -15%;
     z-index: 9999;
-    background: #fbfbfb;
+    background: #fff;
     height: 45vh;
     border-radius: 25px;
     display: flex;
-    padding: 40px;
+    padding: 3px;
     align-items: center;
     flex-direction: column;
+}
+.signin-inp-con {
+    display: flex;
+    width: 99vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
 }
 span.sign-ic {
     font-size: 28px;
@@ -38,3 +45,99 @@ span.sign-sub-ic {
     color: var(--light-color);
     font-size: 15px;
 }
+.signin-ic-main-con {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.signin-heading.Container {
+    width: 100vw;
+}
+.signin-mobile-no-container {
+    width: 92%;
+    border: 1px solid #B3B4BA;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding: 4px;
+    background: white;
+}
+.SMNC-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid grey;
+    padding: 8px;
+    gap: 10px;
+    width: 23%;
+}
+img.flagimg {
+    height: 31px;
+    border-radius: 6px;
+}
+.mobile-txt {
+    padding-right: 4px;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+}
+.SMNC-Right {
+    width: 80%;
+}
+.sign-mob-inp {
+    height: 20px;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    width: 92%;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+    outline: none;
+}
+.sign-button-con {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 93.5vw;
+}
+.signin-bt-txt {
+    font-size: 16px;
+    font-family: var(--font);
+    color: #4a4949;
+}
+.signin-bottom-con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.signin-bottom-btn-con {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    font-family: var(--font);
+    color: #afa9a9;
+}
+input.otp-verify-inp {
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #B3B4BA;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+    outline: none;
+    border-radius: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px !important;
+}
+.verify-err-con {
+    padding: 15px;
+}
+
