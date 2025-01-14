@@ -1,0 +1,13 @@
+button.simple-button {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    border: 1px solid #FF8527;
+    background: #FF8527;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-family: var(--font);
+}

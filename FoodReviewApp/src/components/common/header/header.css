@@ -1,0 +1,19 @@
+.header-con {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    height: 42px;
+    align-items: center;
+}
+.back-btn {
+    width: 9%;
+}
+.header-title {
+    text-align: center;
+    width: 80%;
+    font-size: 21px;
+    font-family: var(--font);
+    color: #4a4949;
+    font-weight: bold;
+}
