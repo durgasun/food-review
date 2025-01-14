@@ -1,0 +1,6 @@
+.clear-container {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: var(--font);
+}

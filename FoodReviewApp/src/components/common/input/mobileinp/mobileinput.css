@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid grey;
+    border-right: 1px solid #B3B4BA;
     padding: 8px;
     gap: 10px;
     width: 23%;

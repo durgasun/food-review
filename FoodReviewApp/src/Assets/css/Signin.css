@@ -124,4 +124,20 @@ img.flagimg {
     font-family: var(--font);
     color: #afa9a9;
 }
+input.otp-verify-inp {
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #B3B4BA;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-size: 17px;
+    outline: none;
+    border-radius: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px !important;
+}
+.verify-err-con {
+    padding: 15px;
+}
 

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../../Assets/css/profilecreation.css';
 import { useFormik } from 'formik';
 import { ProfileValidation} from "../../validation/validation";
 import toast from 'react-hot-toast';
-import {UpdateProfile } from "../../api";
+import {profilebyid, UpdateProfile } from "../../api";
 import FRHeader from "../../components/common/header/header";
 import { IoImage } from "react-icons/io5";
 import { MdFileUpload } from "react-icons/md";
@@ -12,21 +12,49 @@ import SimpleButton from "../../components/common/button/SimpleButton";
 import BasicInputArea from "../../components/common/input/profileinput/profileinputarea";
 import { useNavigate } from "react-router-dom";
 
-export default function FRProfileCreation() {
+export default function FRProfileEdit() {
    const [loader, setLoader] = useState(false);
    const navigate = useNavigate();
+      const [profiledata,setprofiledata]=useState(null);
+      const userid=localStorage.getItem('userid');
+       useEffect(()=>{
+        if(!userid){
+           navigate('/login');
+           return;
+        }
+       callpageloadfunction();
+       },[])
+      const callpageloadfunction=async()=>{
+        try {
+           await getuserdata();
+        } catch (error) {
+         console.log(error); 
+        }
+        finally{
+        }
+      }
+       const getuserdata=async()=>{
+           try {
+               const res = await profilebyid(userid);
+               if (res.status === 200 || 201) {
+                 setprofiledata(res?.data?.data);
+               }
+             } catch (error) {
+               console.log(error)
+             }
+       }
    const formik = useFormik({
       initialValues: {
-         name:null,
-         email:null,
-         bio:null,
-         profile:null
+         name:profiledata?.name || null,
+         email:profiledata?.email || null,
+         bio:profiledata?.bio || null,
+         profile:profiledata?.profile || null
       },
       validationSchema: ProfileValidation,
+      enableReinitialize: true,
       onSubmit: async (values) => {
          setLoader(true);
          const {name,email,bio,profile}=values;
-         const userid=localStorage.getItem('userid')
          try {
             const res = await UpdateProfile({
                id:userid,
@@ -40,7 +68,7 @@ export default function FRProfileCreation() {
             });
             if (res.status === 200 || 201) {
                setLoader(false);
-               toast.success('Profile created Successfully', { id: '001' });
+               toast.success('Profile Updated Successfully', { id: '001' });
                setTimeout(() => {
                   navigate('/Dashboard');  
               }, 2000);
@@ -69,7 +97,7 @@ export default function FRProfileCreation() {
 
    return (
       <div className='pr-main-con'>
-         <FRHeader title={'Profile Creation'} />
+         <FRHeader title={'Edit Profile'} backbtn={true} clickfun={()=>{navigate(-1)}} />
          <form onSubmit={formik.handleSubmit}>
             <div className="profile-inp-con">
                <div className="profile-inp-img-single-con">
@@ -99,6 +127,7 @@ export default function FRProfileCreation() {
                   handleChange={handleChange}
                   placeholder={'Profile Name'}
                   label={'Profile Name'}
+                  value={formik?.values?.name}
                />
                <BasicInput
                   formik={formik}
@@ -106,6 +135,7 @@ export default function FRProfileCreation() {
                   handleChange={handleChange}
                   placeholder={'Email'}
                   label={'Email'}
+                  value={formik?.values?.email}
                />
                <BasicInputArea
                   formik={formik}
@@ -113,6 +143,7 @@ export default function FRProfileCreation() {
                   handleChange={handleChange}
                   placeholder={'Bio'}
                   label={'Bio'}
+                  value={formik?.values?.bio}
                />
                <div className="profile-submit-con">
                   <SimpleButton

@@ -1,0 +1,24 @@
+.PR-IC-nav-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PR-IC-nav-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pr-main-con{
+    padding: 10px;
+    background: var(--page-bg);
+    height: 100vh;
+}
+.PR-general-con {
+    margin-top: 10px;
+    height: 100%;
+}

@@ -1,0 +1,5 @@
+.pr-main-con{
+    height: 100vh;
+    padding:10px;
+    background: var(--page-bg);
+}

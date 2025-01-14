@@ -3,7 +3,9 @@ import './header.css';
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 export default function FRHeader({
     backbtn,
-    title
+    title,
+    clickfun,
+    custombutton
 }) {
     return (
         <div className="header-con">
@@ -11,7 +13,7 @@ export default function FRHeader({
                 
                 <div className="back-btn">
                     {
-                        backbtn && <MdOutlineKeyboardArrowLeft />
+                        backbtn && <MdOutlineKeyboardArrowLeft className="backbtn-ic" onClick={clickfun} />
                     }
                   
                 </div>
@@ -20,6 +22,7 @@ export default function FRHeader({
             <div className="header-title">
                 {title}
             </div>
+           {custombutton}
         </div>
     )
 

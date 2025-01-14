@@ -22,13 +22,15 @@ export default function FRSigninPage() {
            setLoader(true);
            try {
              const res = await LoginOrSignup(values);
+             
              if (res.status === 200 || 201) {
                setLoader(false);
                toast.success('OTP Send Successfully', { id: '001' });
-               setTimeout(() => {
-                  navigate('/CreateProfile');
-               }, 2000);
-             
+               localStorage.setItem('userid',res?.data?.data?._id)
+               console.log(res?.data?.data?._id);
+                  setTimeout(() => {
+                     navigate('/verify', { state: { phone:values.mobileno,type:res?.data?.type } });
+                  }, 2000);  
              }
            } catch (error) {
              setLoader(false);

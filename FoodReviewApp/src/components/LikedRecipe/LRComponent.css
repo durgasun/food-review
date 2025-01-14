@@ -1,0 +1,75 @@
+.LR-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 10px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid var(--border-btm-clr);
+}
+
+.LR-con-first {
+    height: 77px;
+    width: 22%;
+    /* border: 1px solid; */
+}
+
+img.LR-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.LR-con-sec {
+    width: 75%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.LR-con-last {
+    width: 4%;
+    /* border: 1px solid; */
+}
+
+.LR-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    font-family: var(--font);
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.LR-TT-con {
+    display: flex;
+    gap: 10px;
+}
+
+.LR-TT-con-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+svg.LR-TT-con-inside-ic {
+    font-size: 20px;
+    color: var(--light-color);
+}
+
+.LR-TT-con-inside-txt {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-color);
+}
+
+svg.LR-Three-menu {
+    font-size: 30px;
+}
