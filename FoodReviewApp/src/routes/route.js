@@ -9,6 +9,7 @@ import FRProfileSetting from "../pages/Profilesetting/profilesetting";
 import FRProfileEdit from "../pages/Profilesetting/profileedit";
 import FRNotification from "../pages/Profilesetting/Notificaiton";
 import FRLikedRecipe from "../pages/Profilesetting/LikedRecipe";
+import FRGroceryList from "../pages/GroceryManagement/GroceryList";
 const FRRoutes = () => {
     return (
       <Router>
@@ -22,6 +23,7 @@ const FRRoutes = () => {
           <Route path="/ProfileEdit" element={<FRProfileEdit />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/likedrecipe" element={<FRLikedRecipe />} />
+          <Route path="/GroceryList" element={<FRGroceryList />} />
         </Routes>
       </Router>
     );

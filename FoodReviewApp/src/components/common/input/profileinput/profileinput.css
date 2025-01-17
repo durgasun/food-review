@@ -36,4 +36,15 @@
 .err-border{
     border: 1px solid #ff7889 !important;
 }
+.select-basic__control.css-13cymwt-control {
+    height: 28px;
+    width: 101%;
+    border-radius: 9px;
+    border: 1px solid #B3B4BA;
+    font-family: var(--font);
+    font-size: 17px;
+    color: #323131;
+    outline: none;
+    height: 47px;
+}
 

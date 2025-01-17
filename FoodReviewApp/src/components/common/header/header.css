@@ -14,7 +14,7 @@
     width: 80%;
     font-size: 21px;
     font-family: var(--font);
-    color: #4a4949;
+    color: var(--heading);
     font-weight: bold;
 }
 svg.backbtn-ic {
