@@ -22,3 +22,15 @@ export const SigninValidation = yup.object({
       .length(6, "OTP must be exactly 6 digits")
       .matches(/^\d{6}$/, "OTP must contain only numbers"),
   });
+  export const AddGloceryValidation = yup.object({
+    gloceryname: yup.string().required("This field is required."),
+    gloceryunit: yup
+      .object()
+      .shape({
+        value: yup.string().required("Please select a valid unit."),
+        label: yup.string().required(),
+      })
+      .nullable()
+      .required("This field is required."),
+      gloceryunitcount:yup.string().required("This field is required."),
+  });
