@@ -1,0 +1,64 @@
+.FR-GP-con{
+position: relative;
+}
+
+.GI-con {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px var(--border-btm-clr);
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    background: white;
+}
+.GI-con-left {
+    width: 15%;
+    border: 1px solid var(--primary-color);
+    height: 47px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    color: var(
+    --primary-color);
+    background: var(--light-glace);
+}
+
+.GI-con-right {display: flex;flex-direction: column;gap: 3px;}
+
+.GI-Con-title {
+    font-size: 20px;
+    font-family: var(--font);
+    color: var(--heading);
+    font-weight: bold;
+}
+
+.GI-Con-Unit {
+    font-size: 15px;
+    font-family: var(--font);
+    color: var(--light-color);
+    font-weight: 400;
+}
+.last-div{
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+}
+.ED-con {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 13%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-glace);
+    font-size: 26px;
+    color: var(--primary-color);
+}
+

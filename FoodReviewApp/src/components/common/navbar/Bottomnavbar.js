@@ -28,7 +28,8 @@ export default function BottomNavbar({ page }) {
             </div>
             <div className="FD-BN-icon-con">
                 <FaShop 
-                    className={`${page === "shop" ? "FD-BN-ic Active" : "FD-BN-ic"}`} 
+                    className={`${page === "grocery" ? "FD-BN-ic Active" : "FD-BN-ic"}`} 
+                    onClick={()=>{navigate('/GroceryList')}}
                 />
             </div>
             <div className="FD-BN-icon-con">

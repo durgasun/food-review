@@ -1,0 +1,53 @@
+.ReactModal__Content {
+    overflow: visible !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin-right: -50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 0px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    width: 90%;
+}
+button.Modal-close {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 37px;
+    font-weight: 600;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: var(--light-glace);
+    position: absolute;
+    top: -15px;
+    z-index: 99;
+    right: -7px;
+}
+.modal-title-con {
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 15px;
+    width: 90%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    background: var(--primary-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    text-align: center;
+    font-family: var(--font);
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+.modal-main-con{
+    padding: 20px;
+    margin-top: 10px;
+}
